@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "export NODE_ENV=development && export DEBUG=app:dev && nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "helmet": "^3.21.3",
